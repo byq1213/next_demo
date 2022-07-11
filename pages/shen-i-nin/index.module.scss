@@ -1,0 +1,231 @@
+$green: #51b16c;
+.arrow {
+}
+@font-face {
+  font-family: "iconfont";
+  src: url("font/iconfont.ttf?t=1657533246404") format("truetype");
+}
+@keyframes animatedBackground {
+    from {
+        /* background-size: cover; */
+        background-position: top;
+    }
+
+    to {
+        /* background-size: cover; */
+        background-position: bottom;
+    }
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.sin {
+  padding: 5rem 1.7rem;
+  font-size: 1.6rem;
+  background-image: url(https://wyj-1301188774.file.myqcloud.com/images/code/code_background.png);
+  background-size: cover;
+//   background-clip: content-box;
+
+  animation-delay: 0;
+  animation-name: animatedBackground;
+  /* animation-timeline: 2s; */
+  /* 持续时间 */
+  animation-duration: 5s;
+  /* 循环次数 */
+  animation-iteration-count: infinite;
+  /* 动画模式 */
+  animation-timing-function: linear;
+  /* -webkit-background-clip: text; */
+  /* color: transparent; */
+//   margin-top: 5rem;
+
+
+  & > div {
+    // border: 1px solid rgb(192, 192, 192);
+    width: 100%;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+  .first {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.3rem;
+    overflow: hidden;
+    .name {
+      height: 5.1rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: #51616c 10px 10px 10px 10px;
+      box-shadow: #eee 0px 1px 20px 0px;
+    }
+    .time {
+      font-size: 2.4rem;
+      font-weight: 400;
+      margin-top: 1.3rem;
+      margin-bottom: 1.4rem;
+    }
+    .qrcode {
+      padding: 12px;
+      width: 23rem;
+      height: 23rem;
+      box-sizing: content-box;
+      margin: 0 auto;
+      background-image: url("./images/gold.gif");
+
+      background-size: 100%;
+      /* box-sizing: border-box; */
+      //   border: 10px dashed #ffa4a4;
+      background-repeat: no-repeat;
+      background-clip: border-box;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .state {
+      width: 16rem;
+      margin: 0.8rem auto;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .refreshBtn {
+      width: 11.5rem;
+      height: 2.8rem;
+      background-color: #2364d3;
+      color: #fff;
+      font-size: 1rem;
+      margin: 0 auto 1.6rem auto;
+      border-radius: 40px;
+      line-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .iconfont{
+        font-size: 0.8rem;
+        margin-right: 8px;
+      }
+    }
+  }
+  .second {
+    height: 11rem;
+    margin-bottom: 1.1rem;
+    overflow: hidden;
+    display: flex;
+
+    .left {
+      width: 50%;
+      background: linear-gradient(#348afe, #1b38cf);
+      color: #fff;
+      text-align: center;
+      box-sizing: content-box;
+      padding: 1.3rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .line1 {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .line2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .dayNum {
+          font-size: 4rem;
+          font-weight: bold;
+        }
+        .hoursUnit {
+          display: inline-block;
+          width: 4rem;
+         
+          font-size: 1.4rem;
+        }
+      }
+      .line3{
+        font-size: 1rem;
+      }
+    }
+    .right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      box-sizing: content-box;
+      padding: 1.3rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 1em;
+      color: rgb(80, 79, 79);
+      .line1{
+        color: #767676;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .iconfont:nth-child(1){
+            color: $green;
+            font-size: 0.8rem;
+        }
+        .text{
+            margin: 0 4px;
+        }
+        .rightIcon{
+            color: $green;
+        }
+      }
+      .line2{
+        color: $green;
+        // font-weight: 300;
+      }
+      .line3{
+        font-size: 1.2rem;
+      }
+      .line4{
+        font-size: 1rem;
+        color: #9f9f9f;
+      }
+    }
+  }
+  .three {
+    height: 5.8rem;
+    border: 1px solid #cfe3ed;
+    background-color: #e5f5fd;
+    display: flex;
+    padding: 0 1.1rem;
+    color: #2169c6;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    .text{
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        img{
+            width: 4rem;
+            height: 4rem;
+            margin-right: 4px;
+        }
+        // font-weight: bold;
+    }
+    .rightText{
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        .t{
+
+        }
+    }
+  }
+}
