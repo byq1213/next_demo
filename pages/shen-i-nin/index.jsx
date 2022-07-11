@@ -7,17 +7,17 @@ function formatTime(time){
 export default function ShenINin() {
 
     const [time, setTime] = useState(new Date());
-    requestAnimationFrame(() => {
-        setTime(new Date())
-    })
-    
-    // useEffect(()=>{
-    //     return function(){
-    //         requestAnimationFrame(()=>{
-    //             setTime(new Date())
-    //         })
-    //     }
+    // requestAnimationFrame(() => {
+    //     setTime(new Date())
     // })
+    
+    useEffect(()=>{
+        // return function(){
+            requestAnimationFrame && requestAnimationFrame(()=>{
+                setTime(new Date())
+            })
+        // }
+    })
     return (
         <div className={s.sin}>
             <style global jsx>{`
