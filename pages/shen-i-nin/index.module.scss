@@ -24,6 +24,8 @@ $green: #51b16c;
   -moz-osx-font-smoothing: grayscale;
 }
 .sin {
+  font-family: Helvetica, Tahoma, Arial, "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
   padding: 5rem 1.7rem;
   font-size: 1.6rem;
   background-image: url(https://wyj-1301188774.file.myqcloud.com/images/code/code_background.png);
@@ -34,7 +36,7 @@ $green: #51b16c;
   animation-name: animatedBackground;
   /* animation-timeline: 2s; */
   /* 持续时间 */
-  animation-duration: 5s;
+  animation-duration: 3s;
   /* 循环次数 */
   animation-iteration-count: infinite;
   /* 动画模式 */
@@ -220,7 +222,7 @@ $green: #51b16c;
         // font-weight: bold;
     }
     .rightText{
-        font-size: 0.8rem;
+        font-size: 1rem;
         display: flex;
         align-items: center;
         .t{
